@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Web Chữa Lành</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="bg-success text-white text-center py-3">
+      <nav class="navbar navbar-expand-lg navbar-light bg-success text-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Trang Chủ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Giới Thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Dịch Vụ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Liên Hệ</a>
+              </li>
+              <li class="nav-item login">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                  >Đăng Nhập</a
+                >
+              </li>
+              <li class="nav-item register">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#registerModal"
+                  >Đăng Ký</a
+                >
+              </li>
+              <li class="nav-item dropdown d-none text-black" id="userDropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Welcome, <span id="username"></span>
+                </a>
+                <ul
+                  class="dropdown-menu text-black bg-success"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#" id="logout">Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container mt-4">
+      <section id="home" class="text-center">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/image.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/thiendinh-trong-yoga-3-412j.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/thumb-23.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/20210309_042118_251663_thien_sieu_viet.max-1800x1800.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/20210309_042256_190119_thien_sieu_viet.max-1800x1800.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/man-sits-in-lotus-pose-person-practices-yoga-and-meditation-radiating-energy-generative-ai_788189-3992.avif"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/pngtree-meditation-image_2872749.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section id="about" class="text-center mt-5">
+        <h2>Bình tĩnh tâm trí của bạn</h2>
+        <p>
+          Sức khỏe tinh thần thật khó khăn. Không cần phải có sự hỗ trợ. Ứng
+          dụng của chúng tôi chứa các công cụ giúp bạn cảm thấy dễ chịu hơn, với
+          nội dung được cá nhân hóa để kiểm soát căng thẳng và lo lắng, giúp bạn
+          có giấc ngủ ngon hơn và cảm thấy hiện diện hơn trong cuộc sống. Hãy
+          thư giãn tâm trí và thức dậy với tư cách là người mà bạn muốn trở
+          thành.
+        </p>
+        <button class="btnFree">Dùng thử miễn phí</button>
+      </section>
+      <section id="Dichvu" class="text-center mt-5">
+        <h2>Chúng tôi ở đây để giúp bạn tốt hơn!</h2>
+        <div class="item-list">
+          <div class="about-item">
+            <i class="fas fa-heart"></i>
+            <h3>Giảm bớt Căng thẳng</h3>
+            <p>
+              Giảm bớt căng thẳng ngay lập tức để bạn có thể quay lại cuộc sống.
+            </p>
+            <a href="#"> Tìm hiểu thêm</a>
+          </div>
+          <div class="about-item">
+            <i class="fas fa-headphones"></i>
+            <h3>Ngủ tốt hơn</h3>
+            <p>Ngủ một cách bình yên và tự nhiên.</p>
+            <a href="#">Tìm hiểu thêm</a>
+          </div>
+          <div class="about-item">
+            <i class="fab fa-pagelines"></i>
+            <h3>Hòa mình vào cuộc sống</h3>
+            <p>cảm nhận sự thăng trầm của cuộc sống.</p>
+            <a href="#"> Tìm hiểu thêm</a>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="text-center mt-5">
+        <h2>Dịch Vụ của chúng tôi</h2>
+
+        <div class="image">
+          <img
+            class="col-md-7"
+            src="https://dv15.mediawz.com/wp-content/uploads/2021/06/bn2.png"
+            alt=""
+          />
+          <div class="text col-md-5 text">
+            <h4 class="text-green">Các dịch vụ bao gồm</h4>
+            <ul id="service-list">
+              <li id="thien">
+                <a href="#">Các khóa học thiền</a>
+              </li>
+              <li id="yoga">
+                <a href="#">Các bài tập Yoga</a>
+              </li>
+              <li id="tamly">
+                <a href="#">Các khóa học về tâm lý cá nhân</a>
+              </li>
+              <li id="sanpham">
+                <a href="#">Các sản phẩm hỗ trợ kèm theo</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="thien-content" class="service-content">
+          <p>Danh sách các khóa học thiền</p>
+          <ul>
+            <li>Khóa học thiền 1</li>
+            <li>Khóa học thiền 2</li>
+            <li>Khóa học thiền 3</li>
+          </ul>
+        </div>
+        <div id="yoga-content" class="service-content">
+          <p>Danh sách các bài tập Yoga</p>
+          <ul>
+            <li>Bài tập Yoga 1</li>
+            <li>Bài tập Yoga 2</li>
+            <li>Bài tập Yoga 3</li>
+          </ul>
+        </div>
+        <div id="tamly-content" class="service-content">
+          <p>Danh sách các khóa học về tâm lý cá nhân</p>
+          <ul>
+            <li>Khóa học về tâm lý cá nhân 1</li>
+            <li>Khóa học về tâm lý cá nhân 2</li>
+            <li>Khóa học về tâm lý cá nhân 3</li>
+          </ul>
+        </div>
+
+        <div id="sanpham-content" class="service-content">
+          <p>Danh sách các sản phẩm hỗ trợ kèm theo</p>
+          <ul>
+            <li>Sản phẩm hỗ trợ 1</li>
+            <li>Sản phẩm hỗ trợ 2</li>
+            <li>Sản phẩm hỗ trợ 3</li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="contact section p-5" id="contact">
+        <h2 class="section-heading text-center">Contact</h2>
+
+        <div class="contact-form">
+          <div class="left">
+            <p>
+              <i class="fas fa-phone"></i>Phone:
+              <a href="tel:0969561860"> 0969561860</a>
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i>Email:
+              <a href="mailto:hieunguyenhuy2001@mail.com">
+                hieunguyenhuy2001@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="right">
+            <form action="">
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <input type="text" placeholder="Subject" />
+              <textarea placeholder="Message" cols="30" rows="7"></textarea>
+              <button type="submit" class="send-message">
+                <i class="fa fa-paper-plane"></i> Send message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-success text-white text-center py-3">
+      <p>&copy; EXE201. All rights reserved</p>
+    </footer>
+
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Đăng Nhập</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="loginForm">
+              <div class="mb-3">
+                <label for="loginEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="loginEmail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="loginPassword" class="form-label">Mật Khẩu</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="loginPassword"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Đăng Nhập</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="registerModal"
+      tabindex="-1"
+      aria-labelledby="registerModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registerModalLabel">Đăng Ký</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="registerForm">
+              <div class="mb-3">
+                <label for="registerEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="registerEmail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerPassword" class="form-label"
+                  >Mật Khẩu</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="registerPassword"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Đăng Ký</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
