@@ -109,6 +109,19 @@ body {
   justify-content: center;
   background-color: #436ec4;
 }
-body > div.about.d-flex.row > div.img-about.col-md-4 {
+.content-main {
+  font-weight: bold;
+}
+.btn-update {
+  background-color: white;
+  padding: 50px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+.btn-update:hover {
+  transform: calc(1.2, 1.2);
+}
+div.img-about.col-md-4 {
   padding: 0;
 }
