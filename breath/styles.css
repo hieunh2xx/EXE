@@ -1,0 +1,114 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1; /* Chia phần còn lại của trang để banner chiếm hết không gian */
+}
+
+.banner-main {
+  margin-top: 20px;
+  background-color: #a4055a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 100px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.banner {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #a4055a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #a4055a;
+  border-radius: 50%;
+  position: absolute;
+  animation: moveInCircle 7s linear infinite;
+}
+
+.text {
+  position: absolute;
+  font-size: 1.5em;
+  color: #333;
+  animation: changeText 7s linear infinite;
+}
+
+.audio-control {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.audio-control:hover {
+  color: white;
+}
+
+@keyframes moveInCircle {
+  0% {
+    transform: translate(0, -100px);
+  }
+  25% {
+    transform: translate(100px, 0);
+  }
+  50% {
+    transform: translate(0, 100px);
+  }
+  75% {
+    transform: translate(-100px, 0);
+  }
+  100% {
+    transform: translate(0, -100px);
+  }
+}
+
+@keyframes changeText {
+  0%,
+  42.85% {
+    content: "Hít vào";
+  }
+  42.86%,
+  100% {
+    content: "Thở ra";
+  }
+}
+.about-content {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #436ec4;
+}
+body > div.about.d-flex.row > div.img-about.col-md-4 {
+  padding: 0;
+}
